@@ -1,5 +1,5 @@
-import { getAllPosts, getPostBySlug } from '@api'
 import PostLayout from '@components/PostLayout'
+import { getAllPosts, getPostBySlug } from '@lib/api'
 
 export default function Post({ title, description, content }) {
   return (

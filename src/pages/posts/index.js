@@ -1,6 +1,6 @@
-import { getAllPosts } from '@api'
 import DefaultLayout from '@components/DefaultLayout'
 import config from '@config'
+import { getAllPosts } from '@lib/api'
 import Link from 'next/link'
 
 export default function Posts({ title, description, posts }) {
