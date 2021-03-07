@@ -1,5 +1,10 @@
-import Layout from 'src/components/Layout'
+import DefaultLayout from '@components/DefaultLayout'
+import config from '@config'
 
 export default function Home() {
-  return <Layout>home</Layout>
+  return (
+    <DefaultLayout title={config} description={config}>
+      home
+    </DefaultLayout>
+  )
 }

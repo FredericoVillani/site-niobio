@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "."
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@api/*": ["./src/api/*"],
+      "@config": ["./config.json"]
+    }
   }
 }
