@@ -1,4 +1,4 @@
-import DefaultLayout from '@components/DefaultLayout'
+import DefaultLayout from "@components/DefaultLayout";
 
 export default function PostLayout({ title, description, content }) {
   return (
@@ -8,5 +8,5 @@ export default function PostLayout({ title, description, content }) {
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </article>
     </DefaultLayout>
-  )
+  );
 }

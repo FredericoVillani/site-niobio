@@ -1,7 +1,7 @@
-import DefaultLayout from '@components/DefaultLayout'
-import config from '@config'
-import { getAllPosts } from '@lib/api'
-import Link from 'next/link'
+import DefaultLayout from "@components/DefaultLayout";
+import config from "@config";
+import { getAllPosts } from "@lib/api";
+import Link from "next/link";
 
 export default function Posts({ title, description, posts }) {
   return (
@@ -11,22 +11,22 @@ export default function Posts({ title, description, posts }) {
         {posts.map((post, idx) => {
           return (
             <li key={idx}>
-              <Link href={'/posts/' + post.slug}>
+              <Link href={"/posts/" + post.slug}>
                 <a>{post.title}</a>
               </Link>
             </li>
-          )
+          );
         })}
       </ul>
     </DefaultLayout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const { title, description } = config
-  const posts = await getAllPosts()
+  const { title, description } = config;
+  const posts = await getAllPosts();
 
   return {
     props: { title, description, posts },
-  }
+  };
 }

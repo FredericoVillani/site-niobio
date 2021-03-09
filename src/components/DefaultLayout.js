@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function DefaultLayout({ children, title, description }) {
   // TO DO: Add header and footer
@@ -10,5 +10,5 @@ export default function DefaultLayout({ children, title, description }) {
       </Head>
       <main>{children}</main>
     </>
-  )
+  );
 }
