@@ -5,7 +5,7 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@lib/*": ["./src/lib/*"],
-      "@styles/*": ["./styles/*"],
+      "@styles/*": ["./src/styles/*"],
       "@posts/*": ["./posts/*"],
       "@config": ["./config.json"]
     }
