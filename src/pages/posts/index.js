@@ -1,32 +1,30 @@
-import DefaultLayout from "@components/DefaultLayout";
-import config from "@config";
-import { getAllPosts } from "@lib/api";
-import Link from "next/link";
+import DefaultLayout from '@components/DefaultLayout'
+import Link from '@components/Link'
+import config from '@config'
+import { getAllPosts } from '@lib/api'
 
 export default function Posts({ title, description, posts }) {
   return (
     <DefaultLayout title={title} description={description}>
       <p>List of posts:</p>
       <ul>
-        {posts.map((post, idx) => {
+        {posts.map((post, index) => {
           return (
-            <li key={idx}>
-              <Link href={"/posts/" + post.slug}>
-                <a>{post.title}</a>
-              </Link>
+            <li key={`${index}-${post.slug}`}>
+              <Link href={`/posts/${post.slug}`}>{post.title}</Link>
             </li>
-          );
+          )
         })}
       </ul>
     </DefaultLayout>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const { title, description } = config;
-  const posts = await getAllPosts();
+  const { title, description } = config
+  const posts = await getAllPosts()
 
   return {
     props: { title, description, posts },
-  };
+  }
 }
