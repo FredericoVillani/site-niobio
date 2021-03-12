@@ -9,8 +9,10 @@ export default function Home() {
       <div class={styles.container}>
         <title>Niobio</title>
         <h1>Site Oficial em Construção!</h1>
-        <h1>Niobio - Dinheiro Transparente</h1>
+        <h1>Niobio - Dinheiro do Povo</h1>
         <h2>A quantidade máxima de moedas é de 210.000 unidades</h2>
+        <h2><Link href="https://bololex.com/trading/?symbol=NBR-USDT">
+            <u>Negociar na Bololex</u></h2>
         <h3>
           <Link href="https://niobio.org">
             <u>Consultar saldos</u>
@@ -37,7 +39,7 @@ export default function Home() {
             <u>Canal do Marconi no Youtube</u>
           </Link>
         </h4>
-        <h2>#SemEnrolação #NovoNiobio #goNBR #ToTheMoon</h2>
+        <h2>#DinheiroDoPovo #Niobio #NBR #ToTheMoon</h2>
       </div>
     </DefaultLayout>
   )
