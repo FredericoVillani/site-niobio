@@ -12,7 +12,7 @@ export default function Home() {
         <h1>Niobio - Dinheiro do Povo</h1>
         <h2>A quantidade máxima de moedas é de 210.000 unidades</h2>
         <h2><Link href="https://bololex.com/trading/?symbol=NBR-USDT">
-            <u>Negociar na Bololex</u></h2>
+            <u>Negociar na Bololex</u></Link></h2>
         <h3>
           <Link href="https://niobio.org">
             <u>Consultar saldos</u>
